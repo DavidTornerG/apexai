@@ -1,0 +1,44 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <circle cx="24" cy="24" r="22" fill="url(#gradient)" stroke="url(#border)" stroke-width="2"/>
+
+  <!-- Central lightning bolt -->
+  <path d="M28 14L18 26H22L20 34L30 22H26L28 14Z" fill="white" stroke="none"/>
+
+  <!-- Subtle grid pattern overlay -->
+  <g opacity="0.1">
+    <line x1="12" y1="12" x2="36" y2="12" stroke="white" stroke-width="0.5"/>
+    <line x1="12" y1="18" x2="36" y2="18" stroke="white" stroke-width="0.5"/>
+    <line x1="12" y1="24" x2="36" y2="24" stroke="white" stroke-width="0.5"/>
+    <line x1="12" y1="30" x2="36" y2="30" stroke="white" stroke-width="0.5"/>
+    <line x1="12" y1="36" x2="36" y2="36" stroke="white" stroke-width="0.5"/>
+    <line x1="12" y1="12" x2="12" y2="36" stroke="white" stroke-width="0.5"/>
+    <line x1="18" y1="12" x2="18" y2="36" stroke="white" stroke-width="0.5"/>
+    <line x1="24" y1="12" x2="24" y2="36" stroke="white" stroke-width="0.5"/>
+    <line x1="30" y1="12" x2="30" y2="36" stroke="white" stroke-width="0.5"/>
+    <line x1="36" y1="12" x2="36" y2="36" stroke="white" stroke-width="0.5"/>
+  </g>
+
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0080FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0052CC;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+</svg>
